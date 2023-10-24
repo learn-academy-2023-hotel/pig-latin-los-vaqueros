@@ -37,8 +37,13 @@ const App = () => {
 
       }else if(eachWord.includes('qu')){
         return eachWord.slice(eachWord.indexOf('u')+1) + eachWord.slice(0,eachWord.indexOf('u')) +'ay'
+
       }else if(vowelsArray.length === 0 ) {
         return eachWord.slice(eachWord.indexOf(`y`)) + eachWord.slice(0,eachWord.indexOf(`y`)) + `ay` 
+
+      }else{
+        return eachWord.slice(eachWord.indexOf(vowelsArray[0]), eachWord.length) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + 'ay'
+
       }
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
