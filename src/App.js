@@ -33,8 +33,18 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
       
+      if (vowelsArray.includes(eachWord[0])) {
+        return eachWord + `way`
+    }
+
+
+      // if (vowelsArray[0] === eachWord[0]) {
+      //   return eachWord + `way`
+      // }
+
+
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord +'way'
+    //   return eachWord
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
